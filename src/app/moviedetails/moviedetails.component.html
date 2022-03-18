@@ -1,0 +1,15 @@
+<div class="container py-5">
+<div class="row py-5">
+    <div class="col-md-3">
+        <img [src]=" imgPrefix+movieDetali.poster_path" class="w-100">
+    </div>
+    <div class="col-md-9">
+        <h2 class="fw-bolder">{{movieDetali.title}}</h2>
+        <ul>
+            <li *ngFor="let g of movieDetali.genres">{{g.name}}</li>
+        </ul>
+        <h4>Overview</h4>
+        <p class="text-muted p-2">{{movieDetali.overview}}</p>
+    </div>
+</div>
+</div>

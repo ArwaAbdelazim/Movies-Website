@@ -1,0 +1,16 @@
+<header class=" vh-100 d-flex align-items-end">
+    <div class="container">
+        <h2 class="h4 fw-bolder">Welcome. <br/>
+            Millions of movies, TV shows and people to discover. Explore now.</h2>
+        <owl-carousel-o [options]="customOptions">
+
+            <ng-container *ngFor="let movie of headerTrendingMovies">
+              <ng-template carouselSlide [id]="movie.id">
+                <img [src]=" imgPrefix+movie.poster_path">
+              </ng-template>
+            </ng-container>
+        
+          </owl-carousel-o>
+    </div>
+
+</header>
